@@ -1,0 +1,52 @@
+{
+  "workflow_name": "Company News Intelligence Workflow",
+  "description": "An AI-powered workflow that automatically researches and analyzes company operational news, identifying key topics and generating comprehensive intelligence reports.",
+  "version": "1.0.0",
+  "created_at": "2025-03-28",
+  "created_by": "Claude + User",
+  "architecture": "Hybrid AI Workflow based on Nate Herk's recommendations",
+  "workflow_stages": [
+    {
+      "name": "Input Processing",
+      "description": "Process webhook input and validate parameters",
+      "nodes": ["node01_webhook", "node02_input_preparation"]
+    },
+    {
+      "name": "Initial Research",
+      "description": "Perform initial search and filter results",
+      "nodes": ["node03_initial_search", "node04_result_filtering"]
+    },
+    {
+      "name": "Topic Identification",
+      "description": "Use AI to identify key operational topics for deep research",
+      "nodes": ["node05_topic_identification", "node06_topic_processing"]
+    },
+    {
+      "name": "Deep Research",
+      "description": "Linear workflow to perform deep searches on all identified topics",
+      "nodes": ["node07_split_by_topics", "node08_deep_topic_search", "node09_deep_result_processing", "node10_topic_analysis", "node11_format_topic_result"]
+    },
+    {
+      "name": "Intelligence Analysis",
+      "description": "Aggregate results and generate comprehensive analysis",
+      "nodes": ["node12_aggregate_topic_results", "node13_organize_results", "node14_generate_report", "node15_format_output", "node16_webhook_response"]
+    }
+  ],
+  "node_relationships": [
+    {"from": "node01_webhook", "to": "node02_input_preparation"},
+    {"from": "node02_input_preparation", "to": "node03_initial_search"},
+    {"from": "node03_initial_search", "to": "node04_result_filtering"},
+    {"from": "node04_result_filtering", "to": "node05_topic_identification"},
+    {"from": "node05_topic_identification", "to": "node06_topic_processing"},
+    {"from": "node06_topic_processing", "to": "node07_split_by_topics"},
+    {"from": "node07_split_by_topics", "to": "node08_deep_topic_search"},
+    {"from": "node08_deep_topic_search", "to": "node09_deep_result_processing"},
+    {"from": "node09_deep_result_processing", "to": "node10_topic_analysis"},
+    {"from": "node10_topic_analysis", "to": "node11_format_topic_result"},
+    {"from": "node11_format_topic_result", "to": "node12_aggregate_topic_results"},
+    {"from": "node12_aggregate_topic_results", "to": "node13_organize_results"},
+    {"from": "node13_organize_results", "to": "node14_generate_report"},
+    {"from": "node14_generate_report", "to": "node15_format_output"},
+    {"from": "node15_format_output", "to": "node16_webhook_response"}
+  ]
+}
