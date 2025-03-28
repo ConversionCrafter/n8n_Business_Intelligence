@@ -1,0 +1,169 @@
+{
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Input Preparation",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Input Preparation": {
+      "main": [
+        [
+          {
+            "node": "Initial Search",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Initial Search": {
+      "main": [
+        [
+          {
+            "node": "Result Filtering",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Result Filtering": {
+      "main": [
+        [
+          {
+            "node": "Topic Identification (AI Agent)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Topic Identification (AI Agent)": {
+      "main": [
+        [
+          {
+            "node": "Topic Processing",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Topic Processing": {
+      "main": [
+        [
+          {
+            "node": "Split by Topics",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split by Topics": {
+      "main": [
+        [
+          {
+            "node": "Deep Topic Search",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Deep Topic Search": {
+      "main": [
+        [
+          {
+            "node": "Deep Result Processing",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Deep Result Processing": {
+      "main": [
+        [
+          {
+            "node": "Topic Analysis",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Topic Analysis": {
+      "main": [
+        [
+          {
+            "node": "Format Topic Result",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Format Topic Result": {
+      "main": [
+        [
+          {
+            "node": "Aggregate Topic Results",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Aggregate Topic Results": {
+      "main": [
+        [
+          {
+            "node": "Organize Results",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Organize Results": {
+      "main": [
+        [
+          {
+            "node": "Generate Final Report (AI Agent)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate Final Report (AI Agent)": {
+      "main": [
+        [
+          {
+            "node": "Format Final Output",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Format Final Output": {
+      "main": [
+        [
+          {
+            "node": "Webhook Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}
